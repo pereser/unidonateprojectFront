@@ -27,7 +27,13 @@ import { DoacaoComponent } from './doacao/doacao.component';
         path: '', component: InicioComponent
       },
       {
-        path: 'ajudar', component: AjudarComponent
+        path: 'ajuda', component: AjudarComponent
+      },
+      {
+        path: 'cadastro', component: CadastrosComponent
+      },
+      {
+        path: 'lista', component: DoacaoComponent
       },
       {
         path: '', redirectTo: 'inicio', pathMatch: 'full'

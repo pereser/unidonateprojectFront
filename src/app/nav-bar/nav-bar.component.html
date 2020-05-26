@@ -1,7 +1,14 @@
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
-        <a class="navbar-brand">UniDonate</a>
-        <a style="font-size:18px" class="btn btn-success" id="centrar3" href="cadastroInstituicao.html"><i class="fa fa-institution"></i>  Nova instituição</a>
-        <a style="font-size:18px" class="btn btn-success" id="centrar4" href="cadastroUsuario.html"><i class="fa fa-user"></i>  Novo usuário</a>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">UNIDONATE</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" [routerLink]="['/ajuda']" >SOBRE</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" [routerLink]="['/cadastro']" >CADASTRO</a></li>
+                    <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" [routerLink]="['/lista']" >LISTA</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>

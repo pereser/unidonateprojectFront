@@ -1,0 +1,25 @@
+
+h1.fontback {
+    color: black;
+}
+p.fontback {
+    color: black;
+    padding-bottom: 2%;
+}
+
+h2.fontback {
+    color: black;
+}
+
+section.espaco {
+    padding-top: 4%;
+}
+
+div.contato{
+    padding-top: 3%;
+}
+
+footer.espaco {
+    padding-top: 10%;
+}
+

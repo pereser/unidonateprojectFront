@@ -1,7 +1,230 @@
 
-<div class="col-lg-4">
-    <img src="/UniDonate/imgFrontPI/desastres.png" id="centrar" class="w3-circle" width="140" height="140">
-    <h2>Doações monetárias</h2>
-    <p>Nesse menu você pode fazer doações monetárias para suprir necessidades de vítimas de desastres naturais.</p>
-    <p><a class="btn btn-success" [routerLink]="['/ajudar']" target="_blank" role="button">Ajudar &raquo;</a></p>
+<header class="masthead bg-light text-white text-center">
+    <div class="container background"><img class="img-fluid d-block mx-auto mb-5 rounded-circle " width="304" height="240" src="assets/img/profile.jpg">
+       
+        <h1 class="fontback">Como podemos ajudar ?</h1>
+        <hr class="star-light">
+        <p class="font-weight-light mb-0 fontback">Nosso site é uma fonte de arrecadação e doação para pessoas, instituições e municípios privadas ou estaduais que estejam necessitando de suprimentos ou verba a fim de suprir as necessidades do solicitante.<br> O diferencial do UniDonate
+            é a abrangência de tipos de recursos recebidos.</p>
+    </div>
+</header>
+<section id="portfolio" class="portfolio espaco">
+    <div class="container">
+        <h2 class="text-uppercase font-weight-bold text-center text-dark">Guia da ajuda</h2>
+        <blockquote class="blockquote text-center">
+            <p class="font-weight-light mb-0 fontback">Click em algum card para descobrir uma forma de ajudar !</p>
+          </blockquote>
+
+        <hr class="star-dark mb-5">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-1">
+                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                        <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"></div>
+                    </div><img class="img-fluid" src="assets/img/portfolio/cabin.svg"></a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-2">
+                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                        <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"></div>
+                    </div><img class="img-fluid" src="assets/img/portfolio/clothes.svg"></a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a class="d-block mx-auto portfolio-item" data-toggle="modal" href="#portfolio-modal-3">
+                    <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
+                        <div class="my-auto portfolio-item-caption-content w-100 text-center text-white"></div>
+                    </div><img class="img-fluid" width="300px" src="assets/img/portfolio/money.svg"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="bg-light text-white mb-0" style="padding-top: 5%;">
+    <div class="container">
+        <h2 class="text-uppercase text-center text-dark">SOBRE</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+            <div class="col-lg-4 ml-auto">
+                <p class="lead fontback">Freelancer is a free bootstrap theme. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+            </div>
+            <div class="col-lg-4 mr-auto">
+                <p class="lead fontback">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<section id="contact" style="padding-bottom: 4%;">
+    <div class="container contato">
+        <h2 class="text-uppercase text-center text-dark mb-0">CONTATO</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Nome</label><input class="form-control" type="text" id="name" required="" placeholder="Nome"><small class="form-text text-danger help-block"></small></div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Email</label><input class="form-control" type="email" id="email" required="" placeholder="Email "><small class="form-text text-danger help-block"></small></div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Telefone</label><input class="form-control" type="tel" id="phone" required="" placeholder="Numero de Telefone"><small class="form-text text-danger help-block"></small></div>
+                    </div>
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-5 pb-2"><textarea class="form-control" id="message" required="" placeholder="Mensagem" rows="5"></textarea><small class="form-text text-danger help-block"></small></div>
+                    </div>
+                    <div id="success"></div>
+                    <div class="form-group"><button class="btn btn-dark btn-xl" id="sendMessageButton" type="submit">Enviar</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="bg-dark">
+<footer class="footer text-center espaco ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase text-light mb-4">Localização</h4>
+                <p class="text-light">2000 BURITIS <br>Belo Horizonte, MG 3000-000</p>
+            </div>
+            <div class="col-md-4 mb-5 mb-lg-0">
+                <h4 class="text-uppercase text-light">LINKS :</h4>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" width="30px" role="button" href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" width="30px" role="button" href="#"><i class="fa fa-google-plus fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" width="30px" role="button" href="#"><i class="fa fa-twitter fa-fw"></i></a></li>
+                    <li class="list-inline-item"><a class="btn btn-outline-light btn-social text-center rounded-circle" width="30px"role="button" href="#"><i class="fa fa-dribbble fa-fw"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4 class="text-uppercase mb-4 text-light">SOBRE O UNIDONATE</h4>
+                <p class="lead mb-0 text-light"><span>Não temos nenhuma relação governamental.&nbsp;</span></p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright py-4 text-center text-white">
+    <div class="container"><small>Copyright ©&nbsp;UNIDONATE 2020</small></div>
+</div>
+</div>
+<div class="d-lg-none scroll-to-top position-fixed rounded"><a class="d-block js-scroll-trigger text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h2 class="text-uppercase text-secondary mb-0">DOAÇÃO DE ALIMENTOS</h2>
+                            <hr class="star-dark mb-5"><img class="img-fluid mb-5" width="400px" src="assets/img/portfolio/cabin.svg">
+                            <p class="mb-5">Aceitamos doação de alimentos para ajudar COMUNIDADES e PESSOAS que necessitam, as doaçoes de alimentos são feitos diretamente nos campos de recolhimento
+                                ou em ONGS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer pb-5"><a class="btn btn-dark btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#">&nbsp;Acessar doação</a></div>
+        </div>
+    </div>
+</div>
+<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-2">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h2 class="text-uppercase text-secondary mb-0">DOAÇÃO DE ROUPAS</h2>
+                            <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/clothes.svg">
+                            <p class="mb-5">Aceitamos doação de alimentos para ajudar COMUNIDADES e PESSOAS que necessitam, as doaçoes de alimentos são feitos diretamente nos campos de recolhimento
+                                ou em ONGS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer pb-5"><a class="btn btn-dark btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#">&nbsp;Acessar doação</a></div>
+        </div>
+    </div>
+</div>
+<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-3">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h2 class="text-uppercase text-secondary mb-0">DOAÇÃO DE DINHEIRO</h2>
+                            <hr class="star-dark mb-5"><img class="img-fluid mb-5" width="300px" src="assets/img/portfolio/money.svg">
+                            <p class="mb-5">Aceitamos doação de alimentos para ajudar COMUNIDADES e PESSOAS que necessitam, as doaçoes de alimentos são feitos diretamente nos campos de recolhimento
+                                ou em ONGS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer pb-5"><a class="btn btn-dark btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#">&nbsp;Acessar doação</a></div>
+        </div>
+    </div>
+</div>
+<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-4">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                            <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/game.png">
+                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                itaque. Nam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+        </div>
+    </div>
+</div>
+<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-5">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                            <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/safe.png">
+                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                itaque. Nam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+        </div>
+    </div>
+</div>
+<div class="modal text-center" role="dialog" tabindex="-1" id="portfolio-modal-6">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+            <div class="modal-body">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
+                            <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/submarine.png">
+                            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                itaque. Nam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer pb-5"><a class="btn btn-primary btn-lg mx-auto rounded-pill portfolio-modal-dismiss" role="button" href="#"><i class="fa fa-close"></i>&nbsp;Close Project</a></div>
+        </div>
+    </div>
 </div>
