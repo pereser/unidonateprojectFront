@@ -1,0 +1,29 @@
+
+hr.new5 {
+    border: 3px solid grey;
+    border-radius: 5px;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+
+
+
+  }
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    
+  }
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    
+  }
+
+  img {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      
+  }

@@ -9,6 +9,7 @@ import { AjudarComponent } from './ajudar/ajudar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { CadastrosComponent } from './cadastros/cadastros.component';
 import { DoacaoComponent } from './doacao/doacao.component';
+import { DoarComponent } from './doarcad/doar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DoacaoComponent } from './doacao/doacao.component';
     AjudarComponent,
     InicioComponent,
     CadastrosComponent,
-    DoacaoComponent
+    DoacaoComponent,
+    DoarComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,9 @@ import { DoacaoComponent } from './doacao/doacao.component';
       },
       {
         path: 'lista', component: DoacaoComponent
+      },
+      {
+        path: 'doar', component: DoarComponent
       },
       {
         path: '', redirectTo: 'inicio', pathMatch: 'full'

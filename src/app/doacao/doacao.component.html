@@ -1,61 +1,31 @@
+ 
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        <div class="card" *ngFor="let t of cadastros "> style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+  <div class="container ">
+    <hr>
+    <div class="row" *ngFor="let c of cadastros ">
+      <div class="col"></div>
+      <div class="col-5" style="padding-bottom: 3%;">
+        <div class="card " style="width: 18rem;">
+            <img src="../../assets\img\ongs\pibot.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Informação ONG</h5>
+              <p class="card-text">Aqui está uma das nossas ongs cadastradas.</p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">{{t.id}}</li>
-              <li class="list-group-item">{{t.nome}}</li>
-              <li class="list-group-item">{{t.endereco}}</li>
-              <li class="list-group-item">{{t.telefone}}</li>
-              <li class="list-group-item">{{t.email}}</li>
+              <li class="list-group-item">{{ c.id }}</li>
+              <li class="list-group-item">Nome: {{ c.nome }}</li>
+              <li class="list-group-item">Endereço: {{ c.endereco }}</li>
+              <li class="list-group-item">Telefone: {{ c.telefone }}</li>
+              <li class="list-group-item">Email: {{ c.email }}</li>
             </ul>
             <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+              <a href="#" class="card-link btn btn-primary">Doar</a>
+              <a href="#" class="card-link btn btn-primary">Informação</a>
             </div>
           </div>
+
       </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-      </div>
-      <div class="col-sm">
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
-      </div>
+      <div class="col"></div>
     </div>
+    <hr>
   </div>

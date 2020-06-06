@@ -21,10 +21,10 @@ export class DoacaoComponent implements OnInit {
   
   consultaCadastros() {
     axios
-    .get("http://localhost:8090/unidonate/ongs/1")
+    .get("http://localhost:8090/unidonate/ongs")
     .then(response => {
     console.log(response);
-    for (let t of response.data._embedded.cadastros) {
+    for (let t of response.data._embedded.ongs) {
     console.log(t);
     this.cadastros.push(new CadastroOng(t.id, t.nome, t.cnpj , t.endereco, t.telefone, t.email));
     }
