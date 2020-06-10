@@ -7,24 +7,24 @@
             <div class="form-row" style="padding-top: 10px;">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Nome</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Nome">
+                <input type="email" class="form-control"  [(ngModel)]="request2.nome" name="nome" id="inputEmail4" placeholder="Nome">
               </div>
               <div class="form-group col-md-6">
                 <label for="inputPassword4">CNPJ</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="CNPJ">
+                <input type="text" class="form-control" id="inputPassword4" [(ngModel)]="request2.cnpj" name="cnpj" placeholder="CNPJ">
               </div>
             </div>
             <div class="form-group">
               <label for="inputAddress">Endereço</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Rua unidonate ">
+              <input type="text" class="form-control" id="inputAddress" [(ngModel)]="request2.endereco" name="endereco" placeholder="Rua unidonate ">
             </div>
             <div class="form-group">
               <label for="inputAddress2">Telefone</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="">
+              <input type="text" class="form-control" id="inputAddress2" [(ngModel)]="request2.telefone" name="telefone" placeholder="">
             </div>
             <div class="form-group">
               <label for="inputAddress2">Email</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Endereço de Email">
+              <input type="text" class="form-control" id="inputAddress2"  [(ngModel)]="request2.email" name="email" placeholder="Endereço de Email">
             </div>
             <div class="form-group">
               <div class="form-check">
@@ -34,7 +34,7 @@
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-dark">Cadastrar</button>
+            <button type="submit" (click)="save2()" onclick="alert('Cadastro feito');" class="btn btn-dark">Cadastrar</button>
           </form>
       </div>
       <div class="col-sm">
@@ -45,34 +45,34 @@
             <div class="form-row" style="padding-top: 10px;">
               <div class="form-group col-md-6">
                 <label for="inputEmail4">Nome</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Nome">
+                <input type="email" class="form-control" id="inputEmail4" [(ngModel)]="request.nome" name="nome" placeholder="Nome">
               </div>
               <div class="form-group col-md-6">
                 <label for="inputPassword4">Senha</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                <input type="password" class="form-control" id="inputPassword4" [(ngModel)]="request.senha" name="senha"  placeholder="Senha">
               </div>
             </div>
             <div class="form-group">
               <label for="inputAddress">CPF</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="CPF">
+              <input type="text" class="form-control" [(ngModel)]="request.cpf" id="inputAddress" name="cpf"  placeholder="CPF">
             </div>
             <div class="form-group">
               <label for="inputAddress2">Telefone</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="">
+              <input type="text" class="form-control" id="inputAddress2" [(ngModel)]="request.telefone" name="telefone"  placeholder="">
             </div>
             <div class="form-group">
               <label for="inputAddress2">Email</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Endereço de Email">
+              <input type="text" class="form-control" id="inputAddress2" [(ngModel)]="request.email" name="email"  placeholder="Endereço de Email">
             </div>
             <div class="form-group">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
                 <label class="form-check-label" for="gridCheck">
-                  Lembrar
+                  Lembrar-me
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-dark">Cadastrar</button>
+            <button type="submit" (click)="save()" onclick="alert('Cadastro feito');" class="btn btn-dark">Cadastrar</button>
           </form>
       </div>
 

@@ -10,6 +10,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { CadastrosComponent } from './cadastros/cadastros.component';
 import { DoacaoComponent } from './doacao/doacao.component';
 import { DoarComponent } from './doarcad/doar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DoarComponent } from './doarcad/doar.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path: '', component: InicioComponent

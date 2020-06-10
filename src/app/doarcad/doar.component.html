@@ -13,16 +13,11 @@
           <div class="form-row" style="padding-top: 10px;">
             <div class="form-group col-md-6">
               <label for="inputEmail4">Tipo de doação</label>
-              <select id="tipodoacao" class="form-control">
-                <option selected>Escolha...</option>
-                <option>ALIMENTOS</option>
-                <option>DINHEIRO</option>
-                <option>ROUPAS</option>
-              </select>
+              <input type="text" class="form-control" id="name" [(ngModel)]="request3.donateType" name="Tipo" placeholder="Feijao, Arroz">
             </div>
             <div class="form-group col-md-6">
               <label for="inputPassword4">Quantidade: </label>
-              <input type="number" class="form-control" id="quantidade" placeholder="Quantidade">
+              <input type="number" class="form-control" id="quantidade" [(ngModel)]="request3.qtd" name="quantidade" placeholder="Quantidade">
               <small id="passwordHelpBlock" class="form-text text-muted">
                 Quantidade de acordo com o produto.
               </small>
@@ -30,14 +25,14 @@
           </div>
           <div class="form-group">
             <label for="inputAddress">Descrição</label>
-            <textarea class="form-control" id="descricao" rows="3"></textarea>
+            <textarea class="form-control" id="descricao"[(ngModel)]="request3.descricao" name="desc"  rows="3"></textarea>
           </div>
           <div class="form-group">
             <label for="inputAddress2">Nome da Organização:</label>
-            <input type="text" class="form-control" id="name" placeholder="Apae, Greepeace, ...">
+            <input type="text" class="form-control" id="name"   placeholder="Apae, Greepeace, ...">
           </div>
         
-          <button type="submit" class="btn btn-dark" id="bDoar">DOAR</button>
+          <button type="submit" class="btn btn-dark" (click)="save3()" onclick="alert('Doação Feita com sucesso.')" id="bDoar">DOAR</button>
           
         </form>
     </div>
